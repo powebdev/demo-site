@@ -1,0 +1,38 @@
+.counties {
+	fill: green;
+}
+
+.states {
+	fill: none;
+	stroke: #333;
+	stroke-linejoin: round;
+}
+
+.highlighted {
+	stroke:  #f00;
+	stroke-width: 2px;
+}
+
+.info-box {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+	border: 1px solid #000;
+	display: none;
+}
+
+.legend {
+	display: flex;
+	margin-left: 20px;
+}
+
+.label {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+
+#container {
+	display: flex;
+}

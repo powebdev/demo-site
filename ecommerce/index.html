@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>eCommerce Demo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<link rel="stylesheet" href="static/css/jquery-ui.css">
+		<link rel="stylesheet" href="static/css/styles.css">
+		<script src="static/js/jQuery.js"></script>
+		<script src="static/js/jquery-ui.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+			<header>
+				<nav>
+					<div class="nav-icon">
+						<img id="menu" src="static/img/hamburger.png">
+					</div>
+					<div class="padding" id="left"></div>
+					<ul class="nav-list" id="nav-menu">
+						<li class="search-bar">
+							<div class="search-bar-container">
+								<input id="search-field" type="text"/>
+								<img id="search-icon" src="static/img/search.png">
+							</div>
+						</li>
+						<li><a href="#"><span class="nav-item">HOME</span></a></li>
+						<li><a href="#"><span class="nav-item">NEWS</span></a></li>
+						<li><a href="#"><span class="nav-item">SHOP</span></a></li>
+						<li><a href="#"><span class="nav-item">BLOG</span></a></li>
+						<li><a href="#"><span class="nav-item">ABOUT</span></a></li>
+						<li><a href="#"><span class="nav-item">CONTACT</span></a></li>
+					</ul>
+					<div class="padding" id="right">
+						<img class="dual-icon" src="static/img/search.png">
+						<img class="dual-icon" src="static/img/cart.png">
+					</div>
+					<div class="nav-icon">
+						<img id="cart" src="static/img/cart.png">
+					</div>
+					<div class="nav-icon">
+						<img id="filter" src="static/img/filter.png">
+					</div>
+				</nav>
+				<div class="banner">
+					<img id="slider" src="static/img/slider1.png">
+				</div>
+			</header>
+			<section id="main">
+				<aside class="filter-pane" id="filter-menu">
+					<div class="box filter-box">
+						<div class="filter-header-container" id="colors-header">
+							<div class="filter-header">
+								<p>MEN</p>								
+							</div>
+							<div class="all-button">
+								<p>ALL</p>
+							</div>
+						</div>
+						<div class="expandable-filter-box">
+							<div class="filter-header-container" id="blazers-header">
+								<div class="filter-header">
+									<p>BLAZERS</p>								
+								</div>
+								<div class="filter-arrow" id="blazers-arrow">
+									<svg height="48" width="48">
+										<path d="M21 20 21 28 26 24 Z" fill="#848484"/>
+									</svg>
+								</div>
+							</div>
+							<div class="expandable-filter" id="blazers-content">
+								<div class="filter-item padded-filter-item">
+									<p>All Blazers</p>								
+								</div>
+								<div class="filter-item padded-filter-item">
+									<p>Cool Blazers</p>								
+								</div>
+								<div class="filter-item padded-filter-item">
+									<p>Cooler Blazers</p>								
+								</div>
+						</div>
+						</div>
+						<div class="expandable-filter-box">
+							<div class="filter-header-container" id="jeans-header">
+								<div class="filter-header">
+									<p>JEANS</p>								
+								</div>
+								<div class="filter-arrow" id="jeans-arrow">
+									<svg height="48" width="48">
+										<path d="M21 20 21 28 26 24 Z" fill="#848484"/>
+									</svg>
+								</div>
+							</div>
+							<div class="expandable-filter" id="jeans-content">
+								<div class="filter-item padded-filter-item">
+									<p>All Jeans</p>								
+								</div>
+								<div class="filter-item padded-filter-item">
+									<p>Straight Jeans</p>								
+								</div>
+								<div class="filter-item padded-filter-item">
+									<p>Slim Jeans</p>								
+								</div>
+								<div class="filter-item padded-filter-item">
+									<p>Selvedge Denim</p>								
+								</div>
+							</div>
+						</div>
+						<div class="filter-header-container" id="knitwear-header">
+							<div class="filter-header">
+								<p>KNITWEAR</p>
+							</div>
+						</div>
+					</div>
+					<div class="box filter-box">
+						<div class="filter-header-container" id="colors-header">
+							<div class="filter-header">
+								<p>COLORS</p>								
+							</div>
+							<div class="all-button">
+								<p>ALL</p>
+							</div>
+						</div>
+						<div class="filter-content" id="colors-content">
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#000000"/>
+									</svg>
+								</div>
+								<p>Black</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#c95fa4"/>
+									</svg>
+								</div>
+								<p>Pink</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#3f7cc2"/>
+									</svg>
+								</div>
+								<p>Blue</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#bb9b6c"/>
+									</svg>
+								</div>
+								<p>Gold</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#9e724b"/>
+									</svg>
+								</div>
+								<p>Brown</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#9775cd"/>
+									</svg>
+								</div>
+								<p>Purple</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#85db52"/>
+									</svg>
+								</div>
+								<p>Green</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#d7535e"/>
+									</svg>
+								</div>
+								<p>Red</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#e38c2d"/>
+									</svg>
+								</div>
+								<p>Orange</p>								
+							</div>
+							<div class="filter-item colors-filter-item">
+								<div class="color-circle">
+									<svg height="40" width="32">
+										<circle cx="16" cy="20" r="5" fill="#dbe1e7"/>
+									</svg>
+								</div>
+								<p>White</p>								
+							</div>
+						</div>
+					</div>
+					<div class="box filter-box">
+						<div class="filter-header-container" id="price-header">
+							<div class="filter-header">
+								<p>PRICE RANGE</p>								
+							</div>
+						</div>
+						<div class="filter-content" id="price-content">
+							<p id="price-range-label">
+								<label for="amount">Your price &nbsp</label>
+								<input type="text" id="amount"
+									readonly style="border:0; color:#666666;">
+							</p>
+							<div id="slider-range"></div>
+						</div>
+					</div>
+					<div class="box filter-box" id="brands-box">
+						<div class="filter-header-container" id="brands-header">
+							<div class="filter-header">
+								<p>BRANDS</p>								
+							</div>
+							<div class="all-button">
+								<p>ALL</p>
+							</div>
+						</div>
+						<div class="filter-content" id="brands-content">
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>A.P.C</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Acne</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Acronym</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Adidas</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Black Diamond</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Calvin Klein</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Eddie Bauer</p>								
+							</div>
+							<div class="filter-item brands-filter-item padded-filter-item">
+								<p>Marmot</p>								
+							</div>
+						</div>
+					</div>
+					<div class="box filter-box">
+						<div class="filter-header-container" id="sizes-header">
+							<div class="filter-header">
+								<p>CLOTHING SIZES</p>								
+							</div>
+							<div class="all-button">
+								<p>ALL</p>
+							</div>
+						</div>
+						<div class="filter-content" id="sizes-content">
+							<div class="filter-item sizes-filter-item">
+								<p>S</p>								
+							</div>
+							<div class="filter-item sizes-filter-item">
+								<p>M</p>								
+							</div>
+							<div class="filter-item sizes-filter-item">
+								<p>L</p>								
+							</div>
+							<div class="filter-item sizes-filter-item">
+								<p>XL</p>								
+							</div>
+							<div class="filter-item sizes-filter-item">
+								<p>XXL</p>								
+							</div>
+						</div>
+					</div>
+				</aside>
+				<section id="items">
+				</section>
+			</section>
+			<footer>
+				<div class="footer-content">
+					<div class="footer-col">
+						<div class="footer-menu-header" id="footer-categories">
+							<p>CATEGORIES</p>
+							<div class="footer-plus" id="categories">
+								<svg height="40" width="40">
+									<path d="M14 20 26 20 Z" stroke="#ffffff"/>
+									<path d="M20 14 20 26 Z" stroke="#ffffff"/>
+								</svg>
+							</div>
+						</div>
+						<div class="footer-menu-content" id="footer-content-categories">
+							<div class="footer-menu-item">
+								<p>Blazers</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Coats & Jackets</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Shoes</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Sweatshirts</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>T-Shirts</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Shoes</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-col">
+						<div class="footer-menu-header" id="footer-information">
+							<p>INFORMATION</p>
+							<div class="footer-plus" id="information">
+								<svg height="40" width="40">
+									<path d="M14 20 26 20 Z" stroke="#ffffff"/>
+									<path d="M20 14 20 26 Z" stroke="#ffffff"/>
+								</svg>
+							</div>
+						</div>
+						<div class="footer-menu-content" id="footer-content-information">
+							<div class="footer-menu-item">
+								<p>FAQs</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Size Guide</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Delivery Info</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Return Info</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Discount</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Our Stores</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-col">
+						<div class="footer-menu-header" id="footer-contact-us">
+							<p>Contact US</p>
+							<div class="footer-plus" id="contact-us">
+								<svg height="40" width="40">
+									<path d="M14 20 26 20 Z" stroke="#ffffff"/>
+									<path d="M20 14 20 26 Z" stroke="#ffffff"/>
+								</svg>
+							</div>
+						</div>
+						<div class="footer-menu-content" id="footer-content-contact-us">
+							<div class="footer-menu-item">
+								<p>48 Park Avenue,</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>East 21st Street, Apt. 304</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>San Francisco</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Email:support@diiim.com</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Phone: 415-515-6171</p>
+							</div>
+							<div class="footer-menu-item">
+								<p>Fax: 415-515-6171</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-col social-section">
+						<div class="email">
+							<input type="text" placeholder="Email address"/>
+							<input type="submit" value="&gt"/>
+						</div>
+						<div class="social">
+							<img class="social-icon"
+								src="static/img/facebook.png">
+							<img class="social-icon"
+								src="static/img/twitter.png">
+							<img class="social-icon"
+								src="static/img/instagram.png">
+							<img class="social-icon"
+								src="static/img/googleplus.png">
+						</div>
+						<div class="copyright">
+							<p>&copy; 2015 Silk UI Kit. All rights reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<script src="static/js/data.js"></script>
+			<script src="static/js/script.js"></script>
+	</body>
+</html>
